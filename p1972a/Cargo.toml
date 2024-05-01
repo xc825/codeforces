@@ -1,0 +1,10 @@
+workspace = { members = ["contest_proposal"] }
+[package]
+name = "p1972a"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+contest_proposal = { path = "./contest_proposal" }
