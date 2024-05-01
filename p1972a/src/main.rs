@@ -1,12 +1,9 @@
-use std::io::{self, Read, Cursor};
+use std::io::{self, BufRead};
 use contest_proposal::contests;
 
 fn main() {
-    let mut stdin = io::stdin();
-    let mut buffer = Vec::new();
-    stdin.read_to_end(&mut buffer).unwrap();
-    let cursor = Cursor::new(buffer);
-    contests(cursor);
+    let stdin = io::stdin();
+    contests(stdin.lock().lines());
 }
 
 //"6\n1000 1400 2000 2000 2200 2700\n800 1200 1500 1800 2200 3000\n";
