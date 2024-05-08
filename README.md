@@ -3,4 +3,4 @@ A good starting point for a new Rust project
 
 ## References
 
-My Codeforces playground
+My Codeforces playground for Rust
