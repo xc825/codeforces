@@ -1,4 +1,4 @@
-# rust-new-project-template
+# My Codeforces playground
 A good starting point for a new Rust project
 
 ## References
